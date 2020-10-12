@@ -1,5 +1,9 @@
 package com.capgemini.util;
-
+/**
+ * CgConstants is a class that holds the constants that can substitute the literals 
+ * @author SAISHIVA
+ *
+ */
 public class CgConstants {
 public static final String CHECK_YOUR_PASSWORD="Password is Wrong, Check your Password";
 public static final String LOGIN_REQUEST_UNDER_PROCESSING="your login request is under processing";

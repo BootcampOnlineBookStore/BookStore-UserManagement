@@ -1,7 +1,11 @@
 package com.capgemini.dto;
 
 import java.util.List;
-
+/**
+ * the class ErrorInfo is used for modifying the HTTP error into the message understandable by the user
+ * @author SAISHIVA
+ *@version 1.0
+ */
 public class ErrorInfo {
 
 	public String message;

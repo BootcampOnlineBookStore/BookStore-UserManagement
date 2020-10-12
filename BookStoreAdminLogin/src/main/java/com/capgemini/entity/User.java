@@ -9,7 +9,12 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
-
+/**
+ * User is an entity class which is related to the database table
+ * every field is a column in the data base
+ * @author SAISHIVA
+ *
+ */
 @Entity
 @DynamicInsert
 @DynamicUpdate
@@ -26,6 +31,15 @@ public class User {
 	private String password;
 	@Column(name="updated_date")
 	private LocalDate updatedDate;
+	@Column(name="role")
+	private String role;
+	
+	public String getRole() {
+		return role;
+	}
+	public void setRole(String role) {
+		this.role = role;
+	}
 	public String getEmail() {
 		return email;
 	}
@@ -60,7 +74,7 @@ public class User {
 	@Override
 	public String toString() {
 		return "email=" + email + ", userId=" + userId + ", fullName=" + fullName + ", password=" + password
-				+ ", updatedDate=" + updatedDate;
+				+ ", updatedDate=" + updatedDate + "role"+ role;
 	}
 	
 	
