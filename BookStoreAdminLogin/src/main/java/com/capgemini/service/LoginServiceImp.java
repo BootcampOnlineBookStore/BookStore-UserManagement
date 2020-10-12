@@ -13,12 +13,12 @@ import com.capgemini.exceptions.LoginException;
 import com.capgemini.util.CgConstants;
 
 /**
-* The LoginServiceImp class provides the methods that implement login functionality,logout, verify login
-* Each method has a functionality.
-*
-* @author  Sai Shiva Kumar
+* Class: LoginServiceImp
+* Description: The LoginServiceImp class provides the methods that implement login functionality,logout, verify login
+  Each method has a functionality.
+* @author  SAISHIVA
 * @version 1.0
-* @since   2020-10-12 
+* CreatedOn   2020-10-07 
 */
 @Service
 public class LoginServiceImp implements LoginService{
@@ -30,9 +30,10 @@ public class LoginServiceImp implements LoginService{
 	Logger logger = LoggerFactory.getLogger(LoginServiceImp.class);
 	
 	/**
-	 * The method doLogin implements the login functionality
+	 * Method: doLogin 
+	 * Description: implements the login functionality
 	 * it returns login successful if the credentials are correct
-	 * @Override is used to override the unimplemented methods
+	 * @throws LoginException 
 	 */
 	@Override
 	public User doLogin(String email, String password)throws LoginException {
@@ -41,7 +42,7 @@ public class LoginServiceImp implements LoginService{
 		Optional<User> optUser = dao.findById(email);
 		if (optUser.isPresent()) {
 			user = optUser.get();
-			if(!user.getPassword().contentEquals(/*decryptString*/(password)))
+			if(!user.getPassword().contentEquals((password)))
 				throw new LoginException(CgConstants.CHECK_YOUR_PASSWORD);
 			logger.info(CgConstants.USER_AUTHENTICATED + email);
 			return user;
@@ -50,16 +51,16 @@ public class LoginServiceImp implements LoginService{
 		throw new LoginException(CgConstants.CHECK_YOUR_CREDENTIALS);
 	}
 	/**
-	 * The method encrypt user encrypts the credentials 
-	 * @Override is used to override the unimplemented methods
-	 * 
+	 * Method: encryptUser 
+	 * Description: encrypts the credentials   
 	 */
 	@Override
 	public String encryptUser(User user) {
 		return encryptString(user.getFullName())+"-" +encryptString(user.getPassword())+"-"+encryptString(user.getEmail())+"-"+encryptString(user.getRole());
 	}
 	/**
-	 * The encryptString method consists of the encryption logic
+	 * Method: encryptString method 
+	 * Description: consists of the encryption logic
 	 * @param str
 	 * @returns the encrypted string
 	 */
@@ -74,9 +75,10 @@ public class LoginServiceImp implements LoginService{
 		return sb.toString();
 	}
     /**
-     * The decryptString method consists of the decrypt logic for decrypting the string
+     * Method: decryptString 
+     * Description: method consists of the decrypt logic for decrypting the string
      * @param str
-     * @returns the decrypted string
+     * @returns the decrypt string
      */
 	public String decryptString(String str) {
 		char[] arr = str.toCharArray();

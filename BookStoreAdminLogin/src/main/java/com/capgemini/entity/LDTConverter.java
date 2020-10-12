@@ -6,9 +6,10 @@ import java.time.LocalDate;
 import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;
 /**
- * the class is used for converting dates to specific forms
+ * Class: LDTConverter
+ * Description: the class is used for converting dates to specific forms
  * @author SAISHIVA
- *
+ * CreatedOn 2020-10-07
  */
 @Converter(autoApply=true)
 public class LDTConverter implements AttributeConverter<LocalDate,Date>{

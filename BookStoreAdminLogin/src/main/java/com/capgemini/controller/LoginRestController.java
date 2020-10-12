@@ -25,6 +25,7 @@ import com.capgemini.util.CgConstants;
  * to the client
  * @author SAISHIVA
  *@version 1.0
+ * CreatedOn:2020-10-07
  */
 @RestController
 @CrossOrigin(origins = {"http://localhost:4200"})
@@ -37,7 +38,8 @@ public class LoginRestController {
 	private Map<String, User> authMap = new HashMap<>();
 	
 	/**
-	 *getLogin is a method handler that handles the incoming login request
+	 * Method: getLogin 
+	 * Description: is a method handler that handles the incoming login request
 	 * @param email
 	 * @param password
 	 * @return the token which are further encrypted for safety

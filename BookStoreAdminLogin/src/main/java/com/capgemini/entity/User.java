@@ -10,10 +10,11 @@ import javax.persistence.Table;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 /**
- * User is an entity class which is related to the database table
+ * Class: User 
+ * Description: it is an entity class which is related to the database table
  * every field is a column in the data base
  * @author SAISHIVA
- *
+ * CreatedOn: 2020-10-07
  */
 @Entity
 @DynamicInsert
