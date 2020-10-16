@@ -5,7 +5,7 @@ import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
-@CucumberOptions(features="Feature/listuser.feature",glue= {"com.cg.stepDefination"},plugin= {"pretty","html:cucumber-report/valid-report","json:cucumberjson-report/validjson-report.json","junit:junit_cucumber/valid_test.xml"},monochrome=true)
+@CucumberOptions(features="Feature",glue= {"com.cg.stepDefination"},plugin= {"pretty","html:cucumber-report/valid-report","json:cucumberjson-report/validjson-report.json","junit:junit_cucumber/valid_test.xml"},monochrome=true)
 public class TestRunner {
 
 }
