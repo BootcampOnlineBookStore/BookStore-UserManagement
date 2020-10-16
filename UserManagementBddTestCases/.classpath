@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="G:/BDDSoftware/cucumber jars/cobertura-2.1.1.jar"/>
+	<classpathentry kind="lib" path="G:/BDDSoftware/cucumber jars/cucumber-core-1.2.5.jar"/>
+	<classpathentry kind="lib" path="G:/BDDSoftware/cucumber jars/cucumber-html-0.2.2-sources.jar"/>
+	<classpathentry kind="lib" path="G:/BDDSoftware/cucumber jars/cucumber-java-1.2.5.jar"/>
+	<classpathentry kind="lib" path="G:/BDDSoftware/cucumber jars/cucumber-junit-1.2.5.jar"/>
+	<classpathentry kind="lib" path="G:/BDDSoftware/cucumber jars/cucumber-jvm-deps-1.0.5.jar"/>
+	<classpathentry kind="lib" path="G:/BDDSoftware/cucumber jars/cucumber-reporting-0.1.14.jar"/>
+	<classpathentry kind="lib" path="G:/BDDSoftware/cucumber jars/gherkin-2.12.2.jar"/>
+	<classpathentry kind="lib" path="G:/BDDSoftware/cucumber jars/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="G:/BDDSoftware/cucumber jars/mockito-all-2.0.2-beta.jar"/>
+	<classpathentry kind="lib" path="G:/BDDSoftware/selenium-server-standalone-3.141.59.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
